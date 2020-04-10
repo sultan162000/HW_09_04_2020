@@ -8,7 +8,22 @@ namespace HW_09_04_task1
         {
             const string pro = "123pro";
             const string exp = "123exp";
-            
+            System.Console.Write("Введите ключ доступа: ");
+            string a = Console.ReadLine();
+            DocumentWorker program = null;
+            switch (a)
+            {
+                case "":
+                program = new DocumentWorker();
+                break;
+                case pro:
+                program = new ProDocumentWorker();
+                break;
+                case exp:
+                program = new ExpertDocumentWorker();
+                break;
+                
+            }
             
         }
     }
