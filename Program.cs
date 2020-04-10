@@ -24,6 +24,25 @@ namespace HW_09_04_task1
                 break;
                 
             }
+
+            System.Console.WriteLine("1.Открыть Документ\n2.Отредактировать документ\n3.Сохранить в другом формате");
+            int i = int.Parse(Console.ReadLine());
+            switch (i)
+            {
+                case 1:
+                program.OpenDocument();
+                break;
+                case 2:
+                program.EditDocument();
+                break;
+                case 3:
+                program.SaveDocument();
+                break;
+                default:
+                System.Console.WriteLine("Error!");
+                break;
+            }
+            
             
         }
     }
